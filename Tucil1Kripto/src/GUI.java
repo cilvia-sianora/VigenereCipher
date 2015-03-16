@@ -3,15 +3,9 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import tucil1kripto.Vigenere;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
- * @author Anggi
+ * @author Cilvia
  */
 public class GUI extends javax.swing.JApplet {
 
@@ -122,11 +116,7 @@ public class GUI extends javax.swing.JApplet {
 
         getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 295, 530, -1));
 
-        TextField_Key.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TextField_KeyActionPerformed(evt);
-            }
-        });
+
         getContentPane().add(TextField_Key, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 210, 530, -1));
 
         jLabel2.setText("Input:");
@@ -145,11 +135,6 @@ public class GUI extends javax.swing.JApplet {
 
         input.add(FromFile);
         FromFile.setText("From file");
-        FromFile.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FromFileActionPerformed(evt);
-            }
-        });
         getContentPane().add(FromFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 40, -1, -1));
 
         input.add(UserInput);
@@ -215,14 +200,6 @@ public class GUI extends javax.swing.JApplet {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void FromFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FromFileActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FromFileActionPerformed
-
-    private void TextField_KeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextField_KeyActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TextField_KeyActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Vigenere encrypt = new Vigenere();
